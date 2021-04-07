@@ -26,10 +26,10 @@ var NAVTREE =
 [
   [ "Algorithms_in_C++", "index.html", [
     [ "The Algorithms - C++", "index.html", [
-      [ "Overview", "index.html#autotoc_md68", null ],
-      [ "Features", "index.html#autotoc_md69", null ],
-      [ "Documentation", "index.html#autotoc_md70", null ],
-      [ "Contributions", "index.html#autotoc_md71", null ]
+      [ "Overview", "index.html#autotoc_md70", null ],
+      [ "Features", "index.html#autotoc_md71", null ],
+      [ "Documentation", "index.html#autotoc_md72", null ],
+      [ "Contributions", "index.html#autotoc_md73", null ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
       [ "Our Pledge", "d4/d4c/md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md4", null ],
@@ -123,18 +123,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"cpp/iterator/distance.html",
-"cpp/thread/lock.html",
-"d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d",
-"d4/d48/hamming__distance_8cpp.html#a65d845df3fecff7087a2126c7b72030b",
-"d5/d91/namespacesorting.html#a9d4eb6ea3c35540d804d451f1716622d",
-"d7/d35/matrix__exponentiation_8cpp.html#a5769b745458157ef2679949155684f3b",
-"d8/dab/classstatistics_1_1stats__computer2.html#a0acea0729769f430f2dc56260d179745",
-"da/d9a/class_graph.html#a3535be2ce0d62152e54395951330da81",
-"dc/db5/struct_queue.html#a31b892ad81d0e915c20c8f6a88e75f02",
-"de/dd3/newton__raphson__method_8cpp.html#a2003b5b2dcfff0769b957ab5c968b03d",
-""
+"",
+"cpp/io/c/vfwprintf.html",
+"cpp/string/wide/iswlower.html",
+"d1/dc2/classstack.html#a61370d5fbaf9ec6bca4a8c114c1058e1",
+"d3/d95/classdata__structures_1_1tree__234_1_1_tree234.html#ae58dca20f08eaf9313f6e7b0869c2d0e",
+"d5/d66/classrange__queries_1_1per_seg_tree_1_1_node.html#a9adb4639a0797e94a3e556b6b902c088",
+"d6/dc1/classmath_1_1ncr__modulo__p_1_1_n_c_r_modulo_p.html#a57c168cd6eb85718eab97da658a698ad",
+"d8/d77/namespacemachine__learning.html#ab58fb68da2cfc5326d3da0cba6f58118",
+"d9/dde/classbinary__search__tree.html#aa4f84b2eec9b9201af1840868ddb5fb2",
+"db/d82/classlarge__number.html#aeb22d2aae39d1b1e0bd39c7f47b333eb",
+"dd/d9c/classmachine__learning_1_1aystar__search_1_1_eight_puzzle.html#a01564e5136ca270c45382e5ea55dc6ec",
+"functions_func_e.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
