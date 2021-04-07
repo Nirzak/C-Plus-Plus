@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Implementation of Minimum Edit Distance using Dynamic Programing (https://en.wikipedia....">
+<g id="a_node1"><a xlink:title="Implementation of Minimum Edit Distance using Dynamic Programing.">
 <polygon fill="#bfbfbf" stroke="black" points="24,-56.5 24,-86.5 165,-86.5 165,-56.5 24,-56.5"/>
 <text text-anchor="start" x="32" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">dynamic_programming</text>
 <text text-anchor="middle" x="94.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/minimum_edit_distance.cpp</text>

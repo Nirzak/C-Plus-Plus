@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('da/d52/minimum__edit__distance_8cpp.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of <a class="el" href="../../d4/d12/namespace_minimum.html" title="Implementation of Minimum Edit Distance algorithm.">Minimum</a> Edit Distance using Dynamic Programing (<a href="https://en.wikipedia.org/wiki/Edit_distance">https://en.wikipedia.org/wiki/Edit_distance</a>)  
+<p>Implementation of <a href="https://en.wikipedia.org/wiki/Edit_distance">Minimum Edit Distance</a> using Dynamic Programing.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
@@ -116,7 +116,7 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:dd/d24/namespacedynamic__programming"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic Programming algorithms. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d4/d12/namespace_minimum"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d12/namespace_minimum.html">Minimum</a></td></tr>
-<tr class="memdesc:d4/d12/namespace_minimum"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a class="el" href="../../d4/d12/namespace_minimum.html" title="Implementation of Minimum Edit Distance algorithm.">Minimum</a> Edit Distance algorithm. <br /></td></tr>
+<tr class="memdesc:d4/d12/namespace_minimum"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of <a href="https://en.wikipedia.org/wiki/Edit_distance">Minimum Edit Distance</a> algorithm. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -136,10 +136,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of <a class="el" href="../../d4/d12/namespace_minimum.html" title="Implementation of Minimum Edit Distance algorithm.">Minimum</a> Edit Distance using Dynamic Programing (<a href="https://en.wikipedia.org/wiki/Edit_distance">https://en.wikipedia.org/wiki/Edit_distance</a>) </p>
-<p>#deatils</p>
+<div class="textblock"><p>Implementation of <a href="https://en.wikipedia.org/wiki/Edit_distance">Minimum Edit Distance</a> using Dynamic Programing. </p>
 <p>Given two strings str1 &amp; str2 and we have to calculate the minimum number of operations (Insert, Remove, Replace) required to convert str1 to str2.</p>
-<p>#algorithm</p>
+<h3><a class="anchor" id="autotoc_md58"></a>
+Algorithm</h3>
 <p>We will solve this problem using Naive recursion. But as we are approaching with a DP solution. So, we will take a DP array to store the solution of all sub-problems so that we don't have to perform recursion again and again. Now to solve the problem, We can traverse all characters from either right side of the strings or left side. Suppose we will do it from the right side. So, there are two possibilities for every pair of characters being traversed.</p><ol type="1">
 <li>If the last characters of two strings are the same, Ignore the characters and get the count for the remaining string. So, we get the solution for lengths m-1 and n-1 in a DP array.</li>
 <li>Else, (If last characters are not the same), we will consider all three operations (Insert, Remove, Replace) on the last character of the first string and compute the minimum cost for all three operations and take the minimum of three values in the DP array. For Insert: Recur for m and n-1 For Remove: Recur for for m-1 and n For Replace: Recur for for m-1 and n-1</li>
@@ -178,17 +178,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../..
       </table>
 </div><div class="memdoc">
 <p>function to return minimum of three operations Insert, Replace or Delete </p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                             {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">if</span> (x &lt;= y &amp;&amp; x &lt;= z) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> x; <span class="comment">// return z, if x is the minimum value</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (y &lt;= x &amp;&amp; y &lt;= z) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> y; <span class="comment">// return y, if y is the minimum value</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> z; <span class="comment">// return z if z is the minimum value</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                             {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (x &lt;= y &amp;&amp; x &lt;= z) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> x; <span class="comment">// return z, if x is the minimum value</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (y &lt;= x &amp;&amp; y &lt;= z) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> y; <span class="comment">// return y, if y is the minimum value</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> z; <span class="comment">// return z if z is the minimum value</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
