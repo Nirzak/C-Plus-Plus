@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['kadane_3114',['kadane',['../d6/d74/namespacekadane.html',1,'']]],
-  ['knapsack_3115',['Knapsack',['../d7/daf/namespace_knapsack.html',1,'']]]
+  ['kadane_3115',['kadane',['../d6/d74/namespacekadane.html',1,'']]],
+  ['knapsack_3116',['Knapsack',['../d7/daf/namespace_knapsack.html',1,'']]]
 ];
