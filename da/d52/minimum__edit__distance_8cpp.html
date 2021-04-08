@@ -123,11 +123,11 @@ Namespaces</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:affe54b1531f6c75fd97cab7f4ec8d9a8"><td class="memItemLeft" align="right" valign="top"><a id="affe54b1531f6c75fd97cab7f4ec8d9a8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d52/minimum__edit__distance_8cpp.html#affe54b1531f6c75fd97cab7f4ec8d9a8">dynamic_programming::minimum_edit_distance::min</a> (int x, int y, int z)</td></tr>
-<tr class="memdesc:affe54b1531f6c75fd97cab7f4ec8d9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">min function. It will take input the cost of three operations (Insert, Replace or Delete) and return minimum cost among them. <br /></td></tr>
+<tr class="memdesc:affe54b1531f6c75fd97cab7f4ec8d9a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes input of the cost of three operations: Insert, Replace or Delete, and return the minimum cost among them. <br /></td></tr>
 <tr class="separator:affe54b1531f6c75fd97cab7f4ec8d9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18dce3290ebc277dc6d2fde1ed75f791"><td class="memItemLeft" align="right" valign="top"><a id="a18dce3290ebc277dc6d2fde1ed75f791"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d52/minimum__edit__distance_8cpp.html#a18dce3290ebc277dc6d2fde1ed75f791">dynamic_programming::minimum_edit_distance::editDistDP</a> (<a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str1, <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str2, int m, int n)</td></tr>
-<tr class="memdesc:a18dce3290ebc277dc6d2fde1ed75f791"><td class="mdescLeft">&#160;</td><td class="mdescRight">editDistDP function. It will calculate and store the result of all the sub-problems so that we don't have to recur to compute the minimum cost of a particular operation if it is already computed and stored in dp vector. <br /></td></tr>
+<tr class="memdesc:a18dce3290ebc277dc6d2fde1ed75f791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and stores the result of all the sub-problems, so that we don't have to recur to compute the minimum cost of a particular operation if it is already computed and stored in the <code>dp</code> vector. <br /></td></tr>
 <tr class="separator:a18dce3290ebc277dc6d2fde1ed75f791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8dca7b867074164d5f45b0f3851269d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d52/minimum__edit__distance_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">test</a> ()</td></tr>
 <tr class="memdesc:aa8dca7b867074164d5f45b0f3851269d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-test implementations.  <a href="../../da/d52/minimum__edit__distance_8cpp.html#aa8dca7b867074164d5f45b0f3851269d">More...</a><br /></td></tr>
@@ -222,7 +222,7 @@ Here is the call graph for this function:</div>
 <p>Self-test implementations. </p>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 <div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                   {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// test 1</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// 1st test</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str1 = <span class="stringliteral">&quot;INTENTION&quot;</span>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str2 = <span class="stringliteral">&quot;EXECUTION&quot;</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> expected_output1 = 5;</div>
@@ -232,7 +232,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a> &lt;&lt; <span class="stringliteral">&quot;Minimum Number of Operations Required: &quot;</span> &lt;&lt; output1</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            &lt;&lt; <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="comment">// test 2</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="comment">// 2nd test</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str3 = <span class="stringliteral">&quot;SATURDAY&quot;</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a> str4 = <span class="stringliteral">&quot;SUNDAY&quot;</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> expected_output2 = 3;</div>
@@ -245,7 +245,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="abasic_ostream_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/basic_ostream.html">std::cout</a></div></div>
 <div class="ttc" id="abasic_string_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string.html">std::string</a></div></div>
 <div class="ttc" id="aendl_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/io/manip/endl.html">std::endl</a></div><div class="ttdeci">T endl(T... args)</div></div>
-<div class="ttc" id="aminimum__edit__distance_8cpp_html_a18dce3290ebc277dc6d2fde1ed75f791"><div class="ttname"><a href="../../da/d52/minimum__edit__distance_8cpp.html#a18dce3290ebc277dc6d2fde1ed75f791">dynamic_programming::minimum_edit_distance::editDistDP</a></div><div class="ttdeci">int editDistDP(std::string str1, std::string str2, int m, int n)</div><div class="ttdoc">editDistDP function. It will calculate and store the result of all the sub-problems so that we don't ...</div><div class="ttdef"><b>Definition:</b> minimum_edit_distance.cpp:77</div></div>
+<div class="ttc" id="aminimum__edit__distance_8cpp_html_a18dce3290ebc277dc6d2fde1ed75f791"><div class="ttname"><a href="../../da/d52/minimum__edit__distance_8cpp.html#a18dce3290ebc277dc6d2fde1ed75f791">dynamic_programming::minimum_edit_distance::editDistDP</a></div><div class="ttdeci">int editDistDP(std::string str1, std::string str2, int m, int n)</div><div class="ttdoc">Calculates and stores the result of all the sub-problems, so that we don't have to recur to compute t...</div><div class="ttdef"><b>Definition:</b> minimum_edit_distance.cpp:77</div></div>
 <div class="ttc" id="asize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/string/basic_string/size.html">std::string::length</a></div><div class="ttdeci">T length(T... args)</div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
